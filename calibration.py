@@ -22,3 +22,4 @@ for fname in images:
     # Compensate radial and tangential lens distortion and save it
     dst = cv2.undistort(img, cam_mtx, dist)
     cv2.imwrite("%s_calibrated.JPG" % fname, dst)
+    
